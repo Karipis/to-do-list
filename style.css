@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #3A3B3D;
+    background: #df912b;
 }
 
 h3 {
@@ -26,6 +26,7 @@ h3 {
     height: 450px;
     border-radius: 20px;
     overflow-y: auto;
+    box-shadow: 10px 10px 7px rgb(59, 59, 59);
 }
 
 #add_task {
@@ -53,12 +54,15 @@ input[type="text"] {
     width: 100px; 
     border: none;
     border-radius: 30px;
-    background: #FF5945;
+    background: #df912b;
     color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
+#add:hover{
+    background: #b87826;
+}
 .checkbox{
     width: 25px;
     height: 25px;
@@ -70,13 +74,20 @@ input[type="text"] {
     justify-content: center;
     color: white;
     cursor: pointer; 
+    transition: transform 1s ease;
  
 }
 
+.checkbox:hover{
+    border-color: #df912b;
+    transform: scale(1.15);
+}
+
 .checked{
-    background-color: #FF5945;
+    background-color: #df912b;
     border:none;
 }
+
 
 .task{
     position: relative;
@@ -97,10 +108,20 @@ input[type="text"] {
 }
 
 .delete{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #686868;
     background: none;
-    border: none;
+    border-radius: 50%;
     color: #686868;
     position: absolute;
     right: 0px;
     cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.delete:hover{
+    transform: scale(1.15);
+    border-color: red;
+    color: red;
 }
