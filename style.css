@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3A3B3D;
+}
+
+h3 {
+    color: rgb(0, 44, 155);
+}
+
+#container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+#add_task {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+input[type="text"] {
+    background: #EDEEF0;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100%; 
+    border-radius: 30px;
+    padding: 10px; 
+}
+
+#add {
+    position: absolute;
+    right: 0; 
+    height: 35px;
+    width: 100px; 
+    border: none;
+    border-radius: 30px;
+    background: #FF5945;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkbox{
+    width: 25px;
+    height: 25px;
+    background-color: back;
+    border: 2px solid #EDEEF0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer; 
+ 
+}
+
+.checked{
+    background-color: #FF5945;
+    border:none;
+}
+
+.task{
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    color: #686868;
+    align-items: center;
+    width: 100%;
+}
+
+.task p{
+    margin-left:  10px;
+}
+
+#taskList {
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: 300px; /* Sets a max height for the task list */
+}
+
+.delete{
+    background: none;
+    border: none;
+    color: #686868;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
