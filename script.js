@@ -22,6 +22,10 @@ function handleAddButton() {
     // Insert the new task into the taskList
     taskList.insertAdjacentHTML('beforeend', newTaskHTML);
 
+
+    // Save the task to localStorage
+    localStorage.setItem("task", input);
+
     // Call the checkBox function to attach the event listener to the new checkbox
     checkBox(taskList.lastElementChild.querySelector('.checkbox'));
 

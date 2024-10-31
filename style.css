@@ -10,7 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #df912b;
+    background: rgb(237,87,87);
+    background: linear-gradient(180deg, rgba(237,87,87,1) 0%, rgba(252,176,69,1) 100%);
+    background-image: url;
 }
 
 h3 {
@@ -21,7 +23,7 @@ h3 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background: white;
+    background: rgb(255, 250, 227);
     width: 400px;
     height: 450px;
     border-radius: 20px;
@@ -38,7 +40,7 @@ h3 {
 }
 
 input[type="text"] {
-    background: #EDEEF0;
+    background: #dadada;;
     border: none;
     outline: none;
     height: 35px;
@@ -53,11 +55,13 @@ input[type="text"] {
     height: 35px;
     width: 100px;
     border: none;
-    border-radius: 30px;
+    border-radius: 0px;
     background: #df912b;
     color: white;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.8s ease;
+
 }
 
 #add:hover {
@@ -67,8 +71,8 @@ input[type="text"] {
 .checkbox {
     width: 25px;
     height: 25px;
-    background-color: back;
-    border: 2px solid #EDEEF0;
+    background-color: white;
+    border: 1px solid #686868;
     border-radius: 15px;
     display: flex;
     align-items: center;
