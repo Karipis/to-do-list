@@ -104,7 +104,6 @@ input[type="text"] {
 
 #taskList {
     overflow-y: auto; /* Enables vertical scrolling */
-    max-height: 300px; /* Sets a max height for the task list */
 }
 
 .delete{

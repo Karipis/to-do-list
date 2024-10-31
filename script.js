@@ -1,5 +1,5 @@
 let add = document.getElementById('add');
-let container = document.getElementById('container');
+let taskList = document.getElementById('taskList');
 
 add.addEventListener('click', handleAddButton);
 
@@ -19,14 +19,14 @@ function handleAddButton() {
         </div>
     `;
 
-    // Insert the new task into the container
-    container.insertAdjacentHTML('beforeend', newTaskHTML);
+    // Insert the new task into the taskList
+    taskList.insertAdjacentHTML('beforeend', newTaskHTML);
 
     // Call the checkBox function to attach the event listener to the new checkbox
-    checkBox(container.lastElementChild.querySelector('.checkbox'));
+    checkBox(taskList.lastElementChild.querySelector('.checkbox'));
 
     // Call the deleteTask function to add the new delete button
-    deleteTask(container.lastElementChild.querySelector('.delete'));
+    deleteTask(taskList.lastElementChild.querySelector('.delete'));
     // Clear the input field after adding the task
     document.getElementById('taskInput').value = '';
 }
