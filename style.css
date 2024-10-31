@@ -104,6 +104,12 @@ input[type="text"] {
 
 .task p {
     margin-left: 10px;
+    transition: all 0.8s ease;
+}
+
+.checkedDesc{
+    text-decoration: line-through;
+    color: #df912b;
 }
 
 #taskList {

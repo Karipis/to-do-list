@@ -7,7 +7,7 @@ add.addEventListener('click', handleAddButton);
 function handleAddButton() {
     let input = document.getElementById('taskInput').value;
 
-    if(input == ''){
+    if (input == '') {
         return 0; // empty task
     }
     // Create the new task HTML
@@ -40,6 +40,16 @@ function checkBox(checkbox) {
     checkbox.addEventListener('click', (event) => {
         // Toggle the 'checked' class
         event.currentTarget.classList.toggle('checked');
+
+
+        // Whole task element
+        let task = event.currentTarget.parentElement;
+
+        // This is the task paragraph
+        let taskDesc = task.querySelector('.taskDesc');
+
+        console.log(taskDesc);
+        taskDesc.classList.toggle('checkedDesc');
     });
 }
 
@@ -48,7 +58,7 @@ function deleteTask(deleteButton) {
     deleteButton.addEventListener('click', (event) => {
         // Get the whole task from the delete button
         const task = event.currentTarget.parentElement;
-        
+
         // Remove the task element from the DOM
         task.remove();
     });
