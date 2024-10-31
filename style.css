@@ -23,12 +23,12 @@ h3 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background: rgb(255, 250, 227);
+    background: rgb(255, 236, 194);
     width: 400px;
     height: 450px;
     border-radius: 20px;
     overflow-y: auto;
-    box-shadow: 10px 10px 7px rgb(59, 59, 59);
+    box-shadow: 10px 10px 0px rgb(26, 26, 26);
 }
 
 #add_task {
@@ -40,8 +40,8 @@ h3 {
 }
 
 input[type="text"] {
-    background: #dadada;;
-    border: none;
+    background: #ffffff;;
+    border: 1px solid #df912b;;
     outline: none;
     height: 35px;
     width: 100%;
