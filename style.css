@@ -33,7 +33,7 @@ h3 {
     margin-top: 15px;
     width: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     position: relative;
 }
 
@@ -42,16 +42,16 @@ input[type="text"] {
     border: none;
     outline: none;
     height: 35px;
-    width: 100%; 
+    width: 100%;
     border-radius: 30px;
-    padding: 10px; 
+    padding: 10px;
 }
 
 #add {
     position: absolute;
-    right: 0; 
+    right: 0;
     height: 35px;
-    width: 100px; 
+    width: 100px;
     border: none;
     border-radius: 30px;
     background: #df912b;
@@ -60,10 +60,11 @@ input[type="text"] {
     cursor: pointer;
 }
 
-#add:hover{
+#add:hover {
     background: #b87826;
 }
-.checkbox{
+
+.checkbox {
     width: 25px;
     height: 25px;
     background-color: back;
@@ -73,23 +74,22 @@ input[type="text"] {
     align-items: center;
     justify-content: center;
     color: white;
-    cursor: pointer; 
-    transition: transform 1s ease;
- 
+    cursor: pointer;
+    transition: all 0.8s ease;
 }
 
-.checkbox:hover{
+.checkbox:hover {
     border-color: #df912b;
-    transform: scale(1.15);
+    transform: scale(0.90);
 }
 
-.checked{
+.checked {
     background-color: #df912b;
-    border:none;
+    border: none;
 }
 
 
-.task{
+.task {
     position: relative;
     margin-top: 15px;
     display: flex;
@@ -98,15 +98,16 @@ input[type="text"] {
     width: 100%;
 }
 
-.task p{
-    margin-left:  10px;
+.task p {
+    margin-left: 10px;
 }
 
 #taskList {
-    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
 }
 
-.delete{
+.delete {
     width: 25px;
     height: 25px;
     border: 1px solid #686868;
@@ -116,11 +117,11 @@ input[type="text"] {
     position: absolute;
     right: 0px;
     cursor: pointer;
-    transition: transform 1s ease;
+    transition: all 0.8s ease;
 }
 
-.delete:hover{
-    transform: scale(1.15);
+.delete:hover {
     border-color: red;
     color: red;
+    transform: scale(0.90);
 }
